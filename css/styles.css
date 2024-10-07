@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal para ocupar el espacio */
+main {
+    flex: 1;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de encabezados */
+h1 {
+    color: #3776b4; /* Cambia este color al que prefieras */
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.logo {
+    width: 150px; /* Tamaño adecuado para un logo */
+    height: 150px; /* Asegúrate de que sea un cuadrado para que sea perfectamente circular */
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    border: 2px solid #333; /* Agrega un borde para darle estilo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    margin: 20px auto; /* Centra la imagen y le da espacio alrededor */
+    display: block; /* Centra en el contenedor si está en un bloque */
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Estilos del pie de página */
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Botones */
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.product-container {
+    display: flex; /* Activa el modelo Flexbox */
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
+    margin-top: 18px; /* Espacio superior para separar de otros elementos */
+}
+
+.product-item {
+    flex: 1 1 25%; /* Establece un tamaño base del 25% del ancho del contenedor */
+    max-width: 300px; /* Tamaño máximo para los productos */
+    margin: 10px; /* Margen alrededor de cada producto */
+    text-align: center; /* Centra el texto dentro de cada producto */
+}
+
+/* Estilos para las imágenes de producto */
+.product-image {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    max-height: 200px; /* Tamaño máximo para la altura de la imagen */
+    object-fit: cover; /* Cubre el área asignada a la imagen sin distorsionar */
+    border-radius: 8px; /* Bordes redondeados para que coincidan con el contenedor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+.contact-info p {
+    margin: 10px 0;
+}
