@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Bronco TECH - Contacto</title>
+    <title>Contacto - Tech Solutions</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -21,16 +21,44 @@
     </nav>
     <section class="container">
         <h2>Contáctanos</h2>
-        <p>Si tienes preguntas o deseas saber más, estamos aquí para ayudarte.</p>
-        <img src="img/contacto.jpeg" alt="Imagen de contacto" style="width:100%; max-width: 400px; height:auto;">
+        <p>Si tienes preguntas o deseas saber más sobre nuestros servicios y productos, no dudes en ponerte en contacto. Estamos aquí para ayudarte en lo que necesites.</p>
+        
         <div class="contact-info">
-            <p><strong>Dirección:</strong> Duarte #92, La Cueva</p>
-            <p><strong>Teléfono:</strong> +1 (829) 870-7794</p>
-            <p><strong>Email:</strong> elbroncotech@hotmail.com</p>
+            <h3>Información de Contacto</h3>
+            <p><strong>Dirección:</strong> Calle Principal #123, Ciudad Central</p>
+            <p><strong>Teléfono:</strong> +1 (800) 123-4567</p>
+            <p><strong>Email:</strong> contacto@techsolutions.com</p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+            <p><strong>Síguenos en redes sociales:</strong></p>
+            <ul>
+                <li><a href="https://facebook.com/techsolutions" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/techsolutions" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/techsolutions" target="_blank">Instagram</a></li>
+            </ul>
         </div>
+
+        <h3>Ubicación</h3>
+        <p>Encuéntranos en el mapa para una mejor orientación:</p>
+        <a href="https://www.google.com/maps?q=Calle+Principal+123+Ciudad+Central" target="_blank">
+            <img src="img/mapa.png" alt="Mapa de ubicación" style="width:100%; max-width: 400px; height:auto;">
+        </a>
+
+        <h3>Formulario de Contacto</h3>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
     </section>
-    <footer>
-        <p>&copy; 2024 El Bronco TECH - Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>

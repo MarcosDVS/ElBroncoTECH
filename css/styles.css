@@ -6,16 +6,18 @@
 }
 
 html, body {
-    height: 100%;
-}
-
-body {
+    height: auto; /* Ajusta automáticamente el tamaño de acuerdo al contenido */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido supera el tamaño de la pantalla */
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
+}
+
+body {
+    min-height: 100vh; /* Asegura que el body cubra toda la altura de la pantalla */
 }
 
 /* Encabezado y pie de página */
@@ -70,10 +72,68 @@ h2, h3 {
 }
 
 
+/* Estilos para la sección de servicios */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #4A90E2;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container h3::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #4A90E2;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+.container img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.container h3:nth-child(even) {
+    color: #6C757D;
 }
 
 section {
@@ -127,7 +187,91 @@ button:hover {
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
+/* Estilos para la sección de información de contacto */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
 
 .contact-info p {
-    margin: 10px 0;
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contact-info ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button[type="submit"]:hover {
+    background-color: #004da1;
 }
