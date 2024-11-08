@@ -33,24 +33,6 @@ main {
     flex: 1;
 }
 
-/* Navegación */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background-color: #444;
-    padding: 10px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 /* Estilos de encabezados */
 h1 {
     color: #3776b4; /* Cambia este color al que prefieras */
